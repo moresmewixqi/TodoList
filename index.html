@@ -1,20 +1,24 @@
-<!doctype html>
-<html class="no-js" lang="ru">
-
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Todolist</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой распорядок дня</title>
     <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
+
 </head>
 <body>
+
 <div class="container">
-    <h1>Planer <img src="https://wpapers.ru/wallpapers/nature/Landscapes/7393/PREV_%D0%97%D0%B0%D0%B3%D0%B0%D0%B4%D0%BE%D1%87%D0%BD%D1%8B%D0%B9-%D0%BB%D0%B5%D1%81.jpg"></h1>
-    <input type="text" id="taskInput" placeholder="Напиши свой распорядок дня">
-    <button onclick="addTask()"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg></button>
+    <h1>Мой распорядок дня</h1>
+
+    <input type="text" id="taskInput" placeholder="Добавить задачу...">
+    <button onclick="addTask()">Добавить</button>
+
     <ul id="taskList"></ul>
 </div>
-</body>
 
+<script src="script.js"></script>
+</body>
 </html>
