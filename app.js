@@ -1,4 +1,4 @@
-// Массив с расписанием
+
 const tasks = [
     "05:00 - Подъем",
     "06:35 - 07:37 - Еду",
@@ -8,7 +8,7 @@ const tasks = [
     "23:00 - 01:00 - Выхожу пить пиво"
 ];
 
-// Функция для отображения задач
+
 function renderTasks() {
     const taskList = document.getElementById("taskList");
     taskList.innerHTML = "";
@@ -27,7 +27,7 @@ function renderTasks() {
     });
 }
 
-// Функция для добавления задачи
+
 function addTask() {
     const taskInput = document.getElementById("taskInput");
     const taskText = taskInput.value.trim();
@@ -39,11 +39,11 @@ function addTask() {
     }
 }
 
-// Функция для удаления задачи
+
 function removeTask(index) {
     tasks.splice(index, 1);
     renderTasks();
 }
 
-// Запуск рендера при загрузке страницы
+
 document.addEventListener("DOMContentLoaded", renderTasks);
